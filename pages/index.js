@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import AppBar from '../../src/components/AppBar.jsx'
-import AppDrawer from '../../src/components/AppDrawer.jsx'
-import Component from '../../src/components/Component.jsx'
-import Theme from '../../src/components/Theme.jsx'
+import AppBar from '../llamas/src/components/AppBar.jsx'
+import AppDrawer from '../llamas/src/components/AppDrawer.jsx'
+import Component from '../llamas/src/components/Component.jsx'
+import Theme from '../llamas/src/components/Theme.jsx'
 
 export default function Preview() {
 	const [global, setGlobal] = useState({})

@@ -1,4 +1,4 @@
-import '../../src/css/base.scss'
+import '../llamas/src/css/base.scss'
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />
