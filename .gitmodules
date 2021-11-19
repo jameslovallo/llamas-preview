@@ -1,0 +1,3 @@
+[submodule "llamas"]
+	path = llamas
+	url = https://github.com/kaina-agency/llamas.git
