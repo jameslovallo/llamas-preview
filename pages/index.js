@@ -10,6 +10,8 @@ export default function Preview() {
 	const [page, setPage] = useState({})
 
 	useEffect(async () => {
+		document.querySelector('body').classList.add('preview')
+
 		const urlParams = new URLSearchParams(window.location.search)
 		const key = urlParams.get('token') || 'BZX4R4Dr8Y6rnegRb9YaPwtt'
 		let path = urlParams.get('path') || 'home'
