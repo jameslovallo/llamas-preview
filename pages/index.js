@@ -57,12 +57,12 @@ export default function Preview() {
 		<>
 			{global._uid && (
 				<>
+					<Theme global={global} />
 					<Head>
 						<meta
 							name="viewport"
 							content="initial-scale=1.0, width=device-width"
 						/>
-						<Theme global={global} />
 					</Head>
 					<AppDrawer global={global} />
 					<AppBar global={global} />
@@ -88,8 +88,14 @@ export default function Preview() {
 					)}
 				</div>
 			</main>
-			{global._uid &&
-				global.footer.map((content) => <Component blok={content} />)}
+			{global._uid && (
+				<>
+					{global.footer.map((content) => (
+						<Component blok={content} />
+					))}
+					<div dangerouslySetInnerHTML={{ __html: global.custom_html }}></div>
+				</>
+			)}
 		</>
 	)
 }
