@@ -74,15 +74,16 @@ export default function Preview() {
 						<>
 							<Head>
 								{['drawer', 'dialog', 'form', 'images', 'tabs', 'video'].map(
-									(script) => (
+									(script, index) => (
 										<script
 											src={`https://thevillagesofdetroit.com/_astro/src/js/${script}.js`}
+											key={index}
 										/>
 									)
 								)}
 							</Head>
-							{page.map((content) => (
-								<Component blok={content} />
+							{page.map((blok) => (
+								<Component blok={blok} key={blok._uid} />
 							))}
 						</>
 					)}
@@ -90,8 +91,8 @@ export default function Preview() {
 			</main>
 			{global._uid && (
 				<>
-					{global.footer.map((content) => (
-						<Component blok={content} />
+					{global.footer.map((blok) => (
+						<Component blok={blok} key={blok._uid} />
 					))}
 					<div dangerouslySetInnerHTML={{ __html: global.custom_html }}></div>
 				</>
