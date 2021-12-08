@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "nvm use 16.11.1",
+			"problemMatcher": [],
+			"label": "Set Node Version",
+			"runOptions": {
+				"runOn": "folderOpen"
+			}
+		}
+	]
+}
