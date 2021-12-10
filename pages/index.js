@@ -63,6 +63,7 @@ export default function Preview() {
 							name="viewport"
 							content="initial-scale=1.0, width=device-width"
 						/>
+						<script type="module" src="https://spicy-sections.glitch.me/SpicySections.js"></script>
 					</Head>
 					<AppDrawer global={global} />
 					<AppBar global={global} />
@@ -73,7 +74,7 @@ export default function Preview() {
 					{page.length > 0 && (
 						<>
 							<Head>
-								{['drawer', 'dialog', 'form', 'images', 'tabs', 'video'].map(
+								{['drawer', 'dialog', 'form', 'images', 'video'].map(
 									(script, index) => (
 										<script
 											src={`https://thevillagesofdetroit.com/_astro/src/js/${script}.js`}
