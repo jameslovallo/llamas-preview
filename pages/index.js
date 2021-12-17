@@ -74,8 +74,8 @@ export default function Preview() {
 						<>
 							<Head>
 								<script
-									type="module"
 									src="https://unpkg.com/tua-body-scroll-lock@1.2.1/dist/tua-bsl.umd.js"
+									type="module"
 								></script>
 								{['drawer', 'dialog', 'form', 'images', 'tabs', 'video'].map(
 									(script, index) => (
