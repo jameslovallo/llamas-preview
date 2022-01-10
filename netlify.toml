@@ -1,0 +1,8 @@
+[functions]
+  directory = "llamas/src/functions"
+
+[[redirects]]
+  from = "/proxy/*"
+  to = "/.netlify/functions/proxy/:splat"
+  status = 200
+  force = true
