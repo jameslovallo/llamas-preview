@@ -77,15 +77,21 @@ export default function Preview() {
 									src="https://unpkg.com/tua-body-scroll-lock@1.2.1/dist/tua-bsl.umd.js"
 									type="module"
 								></script>
-								{['drawer', 'dialog', 'form', 'images', 'tabs', 'video'].map(
-									(script, index) => (
-										<script
-											src={`https://raw.githack.com/kaina-agency/llamas/master/public/js/${script}.js`}
-											key={index}
-											type="module"
-										/>
-									)
-								)}
+								{[
+									'drawer',
+									'dialog',
+									'dropdown',
+									'form',
+									'images',
+									'tabs',
+									'video',
+								].map((script, index) => (
+									<script
+										src={`https://raw.githack.com/kaina-agency/llamas/master/public/js/${script}.js`}
+										key={index}
+										type="module"
+									/>
+								))}
 							</Head>
 							{page.map((blok) => (
 								<Component blok={blok} key={blok._uid} />
